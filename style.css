@@ -14,9 +14,9 @@ button {
 }
 
 
-.contact {
-    background: none;
-    width: 160px;
+.btn-atomic-tangerine2 {
+
+    width: 100px;
     height: 50px;
     border: 2px solid #F3976C;
     font-size: 18px;
@@ -25,9 +25,9 @@ button {
     overflow: hidden;
 }
 
-.contact:hover{
-    background: #F3976C;
-    cursor: pointer;
+.btn-atomic-tangerine2:hover {
+    background: #F3976C!important;
+    color: rgba(255,255,255, 1)!important;
 }
 
 a:hover {
@@ -276,10 +276,6 @@ a:hover {
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
     color: rgba(0, 0, 0, 1);
-}
-
-.l-bloc .navbar a:hover {
-    color: rgba(255, 255, 255, 1);
 }
 
 .l-bloc .navbar-toggle .icon-bar {
