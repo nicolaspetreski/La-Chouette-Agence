@@ -13,6 +13,23 @@ button {
     outline: none!important;
 }
 
+
+.contact {
+    background: none;
+    width: 160px;
+    height: 50px;
+    border: 2px solid #F3976C;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: 1.2s;
+    overflow: hidden;
+}
+
+.contact:hover{
+    background: #F3976C;
+    cursor: pointer;
+}
+
 a:hover {
     text-decoration: none;
     cursor: pointer;
@@ -246,7 +263,6 @@ a:hover {
 
 .d-bloc .panel .a-btn:hover,
 .l-bloc .a-btn:hover,
-.l-bloc .navbar a:hover,
 .l-bloc .navbar-brand:hover,
 .l-bloc a:hover .icon-sm,
 .l-bloc a:hover .icon-md,
@@ -260,6 +276,10 @@ a:hover {
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
     color: rgba(0, 0, 0, 1);
+}
+
+.l-bloc .navbar a:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 .l-bloc .navbar-toggle .icon-bar {
@@ -686,7 +706,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 15px;
 }
 
 .tight-width-whitespace {
@@ -722,7 +742,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #424242!important;
 }
 
 .med-width-whitespace {
@@ -745,8 +765,13 @@ h4 {
 }   
 
 .white {
-    color: #424242!important;
+    color: rgba(255, 255, 255, 1)!important;
     font-size: 20px;
+}
+
+.grey {
+    font-size: 20px;
+    color: #424242;
 }
 
 .portfolio-thumb {
@@ -785,7 +810,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #f2b091!important;
 }
 
 .btn-atomic-tangerine {
