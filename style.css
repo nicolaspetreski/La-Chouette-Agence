@@ -894,6 +894,14 @@ h4 {
     color : white;
 }
 
+.form-group label {
+    color : #424242;
+}
+
+.col-sm-6 {
+    color: #424242;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
