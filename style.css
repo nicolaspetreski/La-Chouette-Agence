@@ -13,9 +13,20 @@ button {
     outline: none!important;
 }
 
+.navbar-brand {
+    width: 250px;
+    height: 250px;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: 1.2s;
+    overflow: hidden;
+}
+
+.navbar-brand:hover {
+    background: #F3976C!important;
+}
 
 .btn-atomic-tangerine2 {
-
     width: 100px;
     height: 50px;
     border: 2px solid #F3976C;
@@ -806,7 +817,15 @@ h4 {
 }
 
 .tc-white {
-    color: #f2b091!important;
+    color: #fab493!important;
+}
+
+.row > h2{
+    background-color: rgba(165, 147, 99, 0.7);
+    padding: 40px 40px 40px 40px;
+    width: 450px;
+    margin: auto;
+    color: white;
 }
 
 .btn-atomic-tangerine {
