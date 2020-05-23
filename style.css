@@ -27,9 +27,8 @@ button {
 }
 
 .btn-atomic-tangerine2 {
-    width: 100px;
+    width: 95px;
     height: 50px;
-    border: 2px solid #F3976C;
     font-size: 18px;
     border-radius: 25px;
     transition: 1.2s;
@@ -758,9 +757,6 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-    color: #333333!important;
-}
 
 h4 {
     color: #333333!important;
@@ -820,6 +816,10 @@ h4 {
     color: #fab493!important;
 }
 
+.tc-white2 {
+    color: white;
+}
+
 .row > h2{
     background-color: rgba(165, 147, 99, 0.7);
     padding: 40px 40px 40px 40px;
@@ -873,6 +873,25 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.jpg");
+}
+
+#bloc-7 .bloc-lg .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bloc-7 .bloc-lg .row .col-sm-6 p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.col-sm-3 .text-center .social{
+    font-size: 20px;
+}
+
+.col-sm-3 .text-center .social:hover{
+    color : white;
 }
 
 @media (max-width: 1024px) {
