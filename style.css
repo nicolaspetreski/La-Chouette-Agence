@@ -889,7 +889,7 @@ h3 {
     color : white;
 }
 
-h4, blockquote p, .col-sm-6, .form-group label {
+h4, blockquote p, .col-sm-6, .form-group label, blockquote footer {
     color: #424242;
 }
 
