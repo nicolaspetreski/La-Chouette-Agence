@@ -1432,7 +1432,6 @@ img {
 
 .carousel-inner>.item>a>img,
 .carousel-inner>.item>img,
-.img-responsive,
 .thumbnail a>img,
 .thumbnail>img {
     display: block;
@@ -2010,11 +2009,6 @@ pre code {
     margin-left: auto
 }
 
-.row {
-    margin-right: -15px;
-    margin-left: -15px
-}
-
 .col-lg-1,
 .col-lg-10,
 .col-lg-11,
@@ -2292,7 +2286,6 @@ pre code {
     .col-sm-1,
     .col-sm-10,
     .col-sm-11,
-    .col-sm-12,
     .col-sm-2,
     .col-sm-3,
     .col-sm-4,
@@ -4373,7 +4366,7 @@ tbody.collapse.in {
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
 .open>.dropdown-menu {
@@ -5124,7 +5117,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     max-height: 340px
 }
 
-@media (max-device-width:480px) and (orientation:landscape) {
+@media (max-width:480px) and (orientation:landscape) {
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
         max-height: 200px
@@ -7767,9 +7760,8 @@ button.close {
 .pager:after,
 .pager:before,
 .panel-body:after,
-.panel-body:before,
-.row:after,
-.row:before {
+.panel-body:before
+ {
     display: table;
     content: " "
 }
