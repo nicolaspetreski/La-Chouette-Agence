@@ -818,7 +818,7 @@ h3 {
 .row > h2{
     background-color: rgba(165, 147, 99, 0.7);
     padding: 40px 40px 40px 40px;
-    width: 450px;
+    max-width: 450px;
     margin: auto;
     color: white;
 }
@@ -905,36 +905,50 @@ blockquote p {
     font-size: 20px;
 }
 
+.bloc-md h2{
+    font-weight: 700;
+    color: #424242;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .bloc.full-width-bloc,
-    .bloc-tile-2.full-width-bloc .container,
-    .bloc-tile-3.full-width-bloc .container,
-    .bloc-tile-4.full-width-bloc .container {
+    .container {
         padding-left: 0;
         padding-right: 0;
     }
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .navbar .nav {
         max-width: 80%
     }
     .nav-center.navbar .nav {
         max-width: 100%
     }
+
+    .row .col-sm-4 ul li {
+        margin: 10px;
+    }
+
+    h4{
+        text-align: center;
+    }
+
+    .col-sm-4 ul li a {
+        font-size: 15px;
+    }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -952,10 +966,6 @@ blockquote p {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -964,8 +974,6 @@ blockquote p {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1106,9 +1114,12 @@ blockquote p {
         width: 180px;
         height: 320px;
     }
+    .bloc-mob-center-text {
+        text-align: center;
+    }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 481px) and (max-width: 766px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
@@ -1122,35 +1133,94 @@ blockquote p {
         margin: 10px;
     }
 
-    .col-sm-4 ul {
-        display: flex;
-       flex-direction: column;
-       padding-left: 0px;
-       list-style: none;
-    }
-
-    .col-sm-4{
-        margin: 40px 0px 0px 100px;
-}
-
-    .row .row-no-gutters .social {
-        display: grid!important;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "before before"
-        "twitter facebook"
-        'dribble instagram';
-    }
-
-    .bloc-8 .row .col-sm-12 {
-        display: flex;
-    flex-flow: row nowrap;
-    align-content: space-around;
-    justify-content: space-around;
-    }
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
+    h4{
         text-align: center;
     }
+
+    .social .col-sm-3 {
+        margin: 10px 20px 10px 0px;
+    }
+
+    .social{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        justify-content: space-around;
+    }
+
+    .col-sm-12 .row:nth-child(3) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+
+    .col-sm-4 ul li a {
+        font-size: 1.3rem;
+    }
+
+    .bloc-lg h3, .bloc-lg .row h2, blockquote, .bloc-lg .col-sm-12 h2, .bloc-lg .col-sm-12 p  {
+        text-align: justify;
+        text-align: center;
+    }
+
+
 }
+
+@media (max-width: 480px) {
+    .bloc {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .row .col-sm-4 ul {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .row .col-sm-4 ul li {
+        margin: 10px;
+    }
+
+    h4{
+        text-align: center;
+    }
+
+    .social .col-sm-3 {
+        margin: 10px 20px 10px 0px;
+    }
+
+    .social {
+        display: grid!important;
+    grid-template-rows: 50px 50px;
+    grid-template-areas: "content content";
+    }
+
+    .bloc-lg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-sm-12 h2
+     {
+        font-size: 18px;
+    }
+
+    .bloc-lg .col-sm-12 p {
+        font-size: 15px;
+    }
+
+    .bloc-lg .col-sm-12 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .bloc-lg h3, .bloc-lg .row h2, .bloc-md h2, blockquote, .bloc-lg .col-sm-12 h2, .bloc-lg .col-sm-12 p  {
+        text-align: justify;
+    }
+
+
+
+
+
+}
+
