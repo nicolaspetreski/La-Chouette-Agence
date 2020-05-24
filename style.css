@@ -889,16 +889,8 @@ h3 {
     color : white;
 }
 
-.form-group label {
-    color : #424242;
-}
-
-.col-sm-6 {
+h4, blockquote p, .col-sm-6, .form-group label {
     color: #424242;
-}
-
-h4 {
-    color: white;
 }
 
 blockquote p {
