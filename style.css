@@ -552,7 +552,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 1;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -757,11 +757,6 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-
-h4 {
-    color: #333333!important;
-}
-
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
@@ -900,6 +895,14 @@ h4 {
 
 .col-sm-6 {
     color: #424242;
+}
+
+h4 {
+    color: white;
+}
+
+blockquote p {
+    font-size: 20px;
 }
 
 @media (max-width: 1024px) {
@@ -1110,7 +1113,41 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .row .col-sm-4 ul {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .row .col-sm-4 ul li {
+        margin: 10px;
+    }
+
+    .col-sm-4 ul {
+        display: flex;
+       flex-direction: column;
+       padding-left: 0px;
+       list-style: none;
+    }
+
+    .col-sm-4{
+        margin: 40px 0px 0px 100px;
 }
+
+    .row .row-no-gutters .social {
+        display: grid!important;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "before before"
+        "twitter facebook"
+        'dribble instagram';
+    }
+
+    .bloc-8 .row .col-sm-12 {
+        display: flex;
+    flex-flow: row nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    }
 
 @media (max-width: 767px) {
     .bloc-mob-center-text {
