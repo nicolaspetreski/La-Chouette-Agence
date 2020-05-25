@@ -913,6 +913,11 @@ blockquote p {
     }
 }
 
+.bloc-lg .row .tc-white2 {
+    color: white;
+    font-size: x-large;
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
     .navbar .nav {
         max-width: 80%
