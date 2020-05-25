@@ -918,6 +918,38 @@ blockquote p {
     font-size: x-large;
 }
 
+.form-group a{
+    color: orange;
+    text-decoration: underline;
+}
+
+.blanc, .blanc h3 {
+    color: white!important;
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+}
+
+.blanc p, .blanc li {
+    text-align: justify;
+}
+
+.blanc h2 {
+    line-height: 80px;
+}
+
+.blanc h3 {
+    line-height: 40px;
+    text-transform: none;
+    font-size: 16px;
+}
+
+.blanc p, .blanc li{
+    font-size: 16px;
+}
+
+
+
+
 @media (min-width: 768px) and (max-width: 992px) {
     .navbar .nav {
         max-width: 80%
