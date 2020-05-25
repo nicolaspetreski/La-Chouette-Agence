@@ -602,8 +602,8 @@ a[data-lightbox]:hover img {
 }
 
 #lightbox-modal .modal-dialog {
-    width: 90%;
-    max-width: 900px;
+    width: 25%;
+    max-width: 300px;
     margin: 0 auto 0;
 }
 
@@ -971,6 +971,22 @@ blockquote p {
     }
 }
 
+@media (min-width: 768px){
+    #lightbox-modal .modal-dialog {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .snapshot-lb .lightbox-caption {
+        text-align: center;
+    }
+
+    #lightbox-modal .modal-dialog img {
+        margin-left: 20%;
+    }
+}
+
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
@@ -1146,7 +1162,9 @@ blockquote p {
     .bloc-mob-center-text {
         text-align: center;
     }
+
 }
+
 
 @media (min-width: 481px) and (max-width: 766px) {
     .bloc {
@@ -1191,6 +1209,19 @@ blockquote p {
     .bloc-lg h3, .bloc-lg .row h2, blockquote, .bloc-lg .col-sm-12 h2, .bloc-lg .col-sm-12 p  {
         text-align: justify;
         text-align: center;
+    }
+
+    #lightbox-modal .modal-dialog {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .snapshot-lb .lightbox-caption {
+        text-align: center;
+    }
+
+    .snapshot-lb .modal-body {
+        padding-bottom: 65px;
     }
 
 
@@ -1247,9 +1278,19 @@ blockquote p {
         text-align: justify;
     }
 
+    #lightbox-modal .modal-dialog {
+        width: 95%;
+    }
 
+    .snapshot-lb .lightbox-caption {
+        text-align: center;
+    }
 
-
+   
+    
+    .snapshot-lb .modal-body {
+        padding-bottom: 65px;
+    }
 
 }
 
