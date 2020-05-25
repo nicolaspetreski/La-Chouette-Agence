@@ -935,6 +935,7 @@ blockquote p {
 
 .blanc h2 {
     line-height: 80px;
+    text-decoration: underline;
 }
 
 .blanc h3 {
